@@ -19,7 +19,8 @@ from PIL import Image, ImageOps
 # --------------------------------------------------------------------------
 # Konfigurasi
 # --------------------------------------------------------------------------
-DEFAULT_OUT_DIR = Path(__file__).resolve().parent / "output"
+_base = Path(__file__).resolve().parent
+DEFAULT_OUT_DIR = _base / "output" if (_base / "output").is_dir() else _base
 
 # Kompatibel dengan Streamlit lama (use_container_width) maupun baru (width="stretch")
 _ver = tuple(int(p) for p in st.__version__.split(".")[:2] if p.isdigit())
