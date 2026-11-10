@@ -1,0 +1,21 @@
+{
+    "num_classes": 7,
+    "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+    ],
+    "total_images": 49779,
+    "train_images": 39823,
+    "val_images": 9956,
+    "split": "80/20 stratified",
+    "image_size": [
+        48,
+        48
+    ],
+    "color_mode": "grayscale"
+}
